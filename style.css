@@ -1,0 +1,167 @@
+:root {
+  --primary-color: #ea4444;
+  --text-color: #2d2d2d;
+  --white: #ffffff;
+  --shadow-gray: #2d2d2d72;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Jost";
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom Class:: */
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+
+.my-5{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.font-Dancing{
+    font-family: 'Dancing Script';
+    font-weight: 700;
+}
+
+#logo{
+    height: 40px;
+}
+
+/* Navbar */
+.nav_bar li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.nav_bar li a{
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.main_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+
+/* Hero Area */
+.hero_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  width: 450px;
+  height: auto;
+}
+
+.sub_heading {
+  font-size: 32px;
+  font-weight: 400;
+}
+.main_heading {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.description {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 8px 20px;
+  font-size: 20px;
+  border-radius: 2px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px var(--shadow-gray);
+}
+.btn a {
+  color: var(--white);
+}
+
+header{
+    background-image: url('./imgs/header-bg.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+/* biography_area */
+.biography_area{
+    background-image: url('./imgs/biography-bg.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+.biography_content{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+    column-gap: 200px;
+}
+
+/* Recent Work */
+.work_img{
+    width: 100%;
+
+}
+.recent_work_area{
+    background-image: url('./imgs/latest-work-bg.png');
+    background-position: center center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.project_img_container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+
+.project_img_container div{
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px var(--shadow-gray);
+    cursor: pointer;
+
+}
+
+/* contact_section */
+.contact_section{
+    background-color: var(--primary-color);
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+.contact_section p a{
+    color: var(--white);
+}
+
+.contact_section h4 {
+    font-size: 20px;
+    color: var(--white);
+}
+
